@@ -1,0 +1,8 @@
+# 第一阶段只依赖 PySide6（桌面界面），其余功能全部使用 Python 标准库。
+# asyncio / socket / ipaddress / logging / pathlib 都是 Python 自带的，不需要安装。
+PySide6>=6.6.0
+
+# 如果安装 PySide6 下载太慢（完整包约 250MB，其中包含本项目用不到的模块），
+# 可以把上面一行注释掉，改用官方精简版（约 80MB）：
+# PySide6-Essentials>=6.6.0
+# 两者导入方式完全一样（都是 import PySide6.QtWidgets），本项目二者均可运行。
